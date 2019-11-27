@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CheckInActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Welcome, Visitor !"
+        android:textSize="35dp"
+        android:textColor="#222"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnCheckOut"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Check Out"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
