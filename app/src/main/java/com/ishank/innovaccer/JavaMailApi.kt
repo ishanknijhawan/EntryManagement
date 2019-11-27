@@ -3,7 +3,9 @@ package com.ishank.innovaccer
 import android.app.ProgressDialog
 import android.content.Context
 import android.os.AsyncTask
+import android.view.View
 import android.widget.Toast
+import com.google.android.material.snackbar.Snackbar
 import java.util.*
 import javax.mail.*
 import javax.mail.internet.InternetAddress
@@ -30,7 +32,7 @@ class JavaMailApi //Constructor
         super.onPreExecute()
         //Show progress dialog while sending email
         mProgressDialog =
-            ProgressDialog.show(mContext, "Checking out", "Please wait...", false, false)
+            ProgressDialog.show(mContext, "Loading", "Please wait...", false, false)
     }
 
     override fun onPostExecute(aVoid: Void?) {
@@ -38,7 +40,7 @@ class JavaMailApi //Constructor
         //Dismiss progress dialog when message successfully send
         mProgressDialog!!.dismiss()
         //Show success toast
-        Toast.makeText(mContext, "success", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(mContext, "Checked out successfully", Toast.LENGTH_SHORT).show()
     }
 
      override fun doInBackground(vararg params: Void?): Void? { //Creating properties

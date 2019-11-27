@@ -48,10 +48,10 @@ class CheckInActivity : AppCompatActivity() {
             
             Name : ${intent.getStringExtra("name")}
             Phone : ${intent.getStringExtra("phone")}
+            Host name : ${HostActivity.hostName}
+            Address visited : null
             Check-in time : ${intent.getStringExtra("checkin")}
             Check-out time : ${sdf.format(date)}
-            Host name : ${hostName.toString()}
-            Address visited :
         """.trimIndent()
 
         val javaMailAPI = JavaMailApi(this,intent.getStringExtra("email"),subject,message)
